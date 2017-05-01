@@ -3,6 +3,7 @@
 import indexFile from './IndexFile/index.js';
 import urlParams from './UrlParams/index.js';
 import excludeMetaData from './ExcludeMetaData/index.js';
+import localUrl from './LocalUrl/index.js';
 
 class VamtigerRegex {
     static get indexFile() {
@@ -15,6 +16,10 @@ class VamtigerRegex {
 
     static get excludeMetaData() {
         return excludeMetaData;
+    }
+
+    static get localUrl() {
+        return localUrl;
     }
 }
 

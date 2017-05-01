@@ -15,6 +15,8 @@ class Vamtiger {
         const main = this.set.vamtigerMetaElement()
             .then(() => this.set.browserCompatibility())
             .then(() => this.set.polyfills())
+            .then(() => this.load.userInterface())
+            .then(() => this.load.test())
             .catch(this._handleError);
 
         removeEventListener('load', this.main);
