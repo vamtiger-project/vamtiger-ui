@@ -25,7 +25,7 @@ class VamtigerRemoveElement {
     }
 
     _handleError(error) {
-        throw error;
+        return Promise.reject(error);
     }
 }
 

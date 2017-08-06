@@ -64,7 +64,7 @@ class BrowserCompatibilityWithMutationObserver {
     }
 
     _handleError(error) {
-        throw error;
+        return Promise.reject(error);
     }
 }
 

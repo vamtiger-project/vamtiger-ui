@@ -8,13 +8,18 @@
             "type": "node",
             "request": "launch",
             "name": "Bundle",
+            "runtimeExecutable": "/Users/vamtiger/.nvm/v7.9.0/bin/node",
             "runtimeArgs": [
                 "--harmony-async-await"
             ],
             "program": "${workspaceRoot}/.Vamtiger/index.js",
             "args": [
                 "--taskName",
-                "bundle"
+                "bundle",
+                "--jsSouceFolders",
+                "[Library,Test]",
+                "--jsSourceContainerFolders",
+                "[PolyFill,UI]"
             ],
             "protocol": "inspector"
         }

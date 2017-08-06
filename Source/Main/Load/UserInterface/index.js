@@ -50,9 +50,7 @@ class UserInterface {
     }
 
     _handleError(error) {
-        console.error(error);
-
-        throw error;
+        return Promise.reject(error);
     }
 }
 

@@ -17,8 +17,6 @@ describe('vamtiger.set.browserCompatability should check compatibility for', fun
 
         expect(metaElement).to.be.ok;
 
-        console.log(metaElement);
-
         done();
     });
 
@@ -30,8 +28,6 @@ describe('vamtiger.set.browserCompatability should check compatibility for', fun
             metaElement = document.querySelector(selector);
 
         expect(metaElement).to.be.ok;
-
-        console.log(metaElement);
 
         done();
     });
@@ -45,8 +41,6 @@ describe('vamtiger.set.browserCompatability should check compatibility for', fun
 
         expect(metaElement).to.be.ok;
 
-        console.log(metaElement);
-
         done();
     });
 
@@ -58,8 +52,6 @@ describe('vamtiger.set.browserCompatability should check compatibility for', fun
             metaElement = document.querySelector(selector);
 
         expect(metaElement).to.be.ok;
-
-        console.log(metaElement);
 
         done();
     });

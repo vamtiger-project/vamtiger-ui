@@ -8,8 +8,12 @@ class PolyfillMetaElements {
     }
 
     get _polyfillMetaElements() {
-        const polyfillMetaElements = Array
-            .from(this._polyfillMetaElement.childNodes);
+        let polyfillMetaElements = this._polyfillMetaElement;
+        
+        if (polyfillMetaElements && this._polyfillMetaElement.childNodes)
+            polyfillMetaElements = Array.from(polyfillMetaElements.childNodes);
+        else
+            polyfillMetaElements = [];
 
         return polyfillMetaElements;
     }
