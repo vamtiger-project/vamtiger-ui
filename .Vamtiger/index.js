@@ -24,7 +24,7 @@ class VamtigerTask {
 
         vamtiger.run.task(parameters)
             .then(() => process.exit(0))
-            .catch(this._handleError);;
+            .catch(this._handleError);
     }
 
     get _taskName() {
@@ -40,7 +40,9 @@ class VamtigerTask {
     }
 
     _handleError(error) {
-        return Promise.reject(error);
+        console.error(error.stack);
+        
+        throw error;
     }
 }
 

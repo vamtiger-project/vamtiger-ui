@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Bundle",
-            "runtimeExecutable": "/Users/vamtiger/.nvm/v7.9.0/bin/node",
+            "runtimeExecutable": "/Users/vamtiger/.nvm/versions/node/v7.10.1/bin/node",
             "runtimeArgs": [
                 "--harmony-async-await"
             ],
@@ -16,6 +16,26 @@
             "args": [
                 "--taskName",
                 "bundle",
+                "--jsSouceFolders",
+                "[Library,Test]",
+                "--jsSourceContainerFolders",
+                "[PolyFill,UI]"
+            ],
+            "protocol": "inspector"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Package",
+            "runtimeExecutable": "/Users/vamtiger/.nvm/versions/node/v7.10.1/bin/node",
+            "runtimeArgs": [
+                "--harmony-async-await"
+            ],
+            "program": "${workspaceRoot}/.Vamtiger/index.js",
+            "args": [
+                "--taskName",
+                "package",
                 "--jsSouceFolders",
                 "[Library,Test]",
                 "--jsSourceContainerFolders",
