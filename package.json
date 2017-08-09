@@ -6,7 +6,8 @@
   "repository": {},
   "author": "James-Alex Matthews IV",
   "scripts": {
-    "bundle": "node .Vamtiger --taskName bundle --jsSouceFolders [Library,Test] --jsSourceContainerFolders [PolyFill,UI]"
+    "bundle": "node .Vamtiger --taskName bundle --jsSouceFolders [Library,Test] --jsSourceContainerFolders [PolyFill,UI]",
+    "package": "node .Vamtiger --taskName package --jsSouceFolders [Library,Test] --jsSourceContainerFolders [PolyFill,UI]"
   },
   "license": "MIT",
   "devDependencies": {
